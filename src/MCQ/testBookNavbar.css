@@ -1,0 +1,219 @@
+/*Global CSS*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.centerChildElements{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.centerNavElements{
+    display: flex;
+    align-items: center;
+}
+.padding5px{
+    padding: 8px;
+    font-size: 11px;
+}
+.equalSpacing{
+    margin-right: 20px;
+    padding-left:25px;
+}
+.whiteColor{
+    color:white;
+}
+/*End Of Global CSS*/
+.navbar-container{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.navbar-container .navbar-section{
+    width: 250px;
+    background-color: rgb(27,27,27);
+    height: 100vh;
+    overflow-y: scroll;
+    position:fixed;
+    padding-bottom: 50px;
+    top:0;
+    left: 0;
+}
+.navbar-container .search-bar-section{
+    box-shadow: 5px 4px 3px #eee;
+    width: calc(100% - 250px);
+    position: fixed;
+    top:0;
+    left:250px;
+    background-color: #F1F4F6;
+    height: 60px;
+}
+.navbar-container .navbar-section .logo-brand{
+    display: flex;
+    color: white;
+    height: 50px;
+    background-color: tomato;
+    font-size: 20px;
+}
+.logo{
+    margin-right: 10px;
+}
+.all-nav-items .home{
+    background-color: rgb(54,57,64);
+}
+.all-nav-items p{
+    color: rgb(91,95,105);
+    margin-left: 37px;
+    padding-top:14px;
+    padding-bottom:10px;
+    font-size: 10px;
+}
+.tests > div{
+   margin-bottom: 5px;
+}
+.fadedColor{
+  color:#86a1ae;
+  font-weight: 100;
+}
+i{
+    width: 15px;
+}
+.search-container input{
+    padding: 10px;
+    width:600px;
+    border: none;
+    outline: none;
+}
+.fa-search{
+    position: relative;
+    left:-30px;
+    color: rgb(134,161,174);
+}
+.language-container{
+   padding: 5px;
+   position: relative;
+   cursor: pointer;
+}
+.language-container:hover .dropdown{
+    visibility:visible;
+    transition: 0.5s;
+}
+.dropdown{
+    position: absolute;
+    top:calc(100% - 1px);
+    background-color: #ffff;
+    padding: 5px;
+    visibility:hidden;
+    transform:skew(5px,10px);
+    box-shadow: 5px 4px 3px #eee;
+    width:100%;
+}
+.language-container .fas{
+   font-size: 13px;
+}
+.language-container div{
+   padding: 3px;
+}
+.get-pass-container{
+    background-color: #0ece6d;
+    width: 100px;
+    padding: 8px;
+    color:white;
+    text-align: center;
+    margin-left: 30px;
+    border-radius: 10px;
+}
+.notification-container{
+    width:50px;
+}
+.notification-container i{
+    font-size: 25px;
+    color: #86A1AE;
+    margin-left: 30px;
+}
+.profile-container{
+    margin-left: 30px;
+}
+.profile-container #usersCircle{
+    color:#1FBAD6;
+    font-size: 28px;
+    margin-right: 10px;
+}
+.profile-container .language-container{
+    width:100px;
+}
+.profile-container .dropdown{
+    width:200px;
+}
+.profile-container .dropdown{
+   display: flex;
+   flex-direction: column;
+}
+.toggle{
+    display: none;
+}
+.fa-search{
+    cursor: pointer;
+}
+@media only screen and (max-width:1320px){
+    .toggle{
+        display: block;
+        position: absolute;
+        line-height: 60px;
+        left:10px;
+    }
+    .toggle i{
+        color:#86A1AE;
+        font-size: 21px;
+        cursor: pointer;
+    }
+    .navbar-container .navbar-section{
+        transform: translateX(-250px);
+        background-color: rgb(27,27,27);
+        transition: 0.5s;
+        top:60px;
+        padding-bottom: 50px;
+    }
+    .navbar-container .search-bar-section{
+        width: 100%;
+        background-color: #F1F4F6;
+        left:0px;
+    }
+    .search-bar-section input{
+        display: none;
+    }
+    .expandNavbar{
+        transform: translateX(0px);
+        background-color: rgb(27,27,27);
+        transition: 0.5s;
+        top:65px;
+        width: 250px;
+        height: 100vh;
+        overflow-y: scroll;
+        position:fixed;
+        padding-bottom: 100px;
+    }
+    .expandNavbar .logo-brand{
+        display: flex;
+        color: white;
+        height: 50px;
+        background-color: tomato;
+        font-size: 20px;
+    }
+    .search-bar-section{
+        position: relative;
+        left:100px;
+    }
+    .forMobile{
+        justify-content: flex-end;
+    }
+    .forMobile div{
+        margin-left: -6px;
+    }
+    .language-container{
+        position: relative;
+        left:-10px;
+    }
+}

@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.allExams-card-container{
+    position: absolute;
+    top:60px;
+    left:250px;
+    z-index: -100;
+    max-height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.allExams-card-container .card{
+    background-color: azure;
+    width:300px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.allExams-card-container .card .title{
+    overflow: hidden;
+}
+.allExams-card-container .card:hover{
+    transform:scale(1.1,1.1)
+}
+.allExams-card-container .cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+.allExams-card-container .card-child{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 8px;
+    background-color: #ffff;
+    box-shadow: 3px 3px 4px 2px #eee;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.allExams-card-container .card img{
+    width:50px;
+}
+.allExams-card-container h3{
+    margin: 10px;
+}
+@media only screen and (max-width:1320px){
+    .allExams-card-container{
+        left:10px;
+    }
+    .allExams-card-container .card{
+        width:200px;
+    }
+    .allExams-card-container .card-child{
+        padding: 5px;
+    }
+}

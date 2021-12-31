@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.eachBlogContainer{
+    display: flex;
+    justify-content: space-around;
+    background-color: azure;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+}
+.eachBlogContainer .card{
+    margin: 10px;
+}
+.card{
+    background-color: bisque;
+    padding: 5px;
+}
+button{
+    cursor: pointer;
+    padding: 5px;
+    background-color: brown;
+    color: white;
+}
+.blogDescripContainer{
+    position: absolute;
+    background-color: violet;
+    width:600px;
+    height: 600px;
+    left:calc(50% - 300px);
+    top:calc(50% - 300px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.blogDescripContainer h2{
+    text-align: center;
+}
+.descripDetails{
+    background-color: #eee;
+    width: 300px;
+    height: 300px;
+}
+nav ul{
+    display: flex;
+}
