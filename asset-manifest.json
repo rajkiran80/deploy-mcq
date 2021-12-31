@@ -1,10 +1,16 @@
 {
   "files": {
-    "main.js": "/deploy-mcq/static/js/main.8c88fca3.js",
+    "main.css": "/deploy-mcq/static/css/main.31087a08.css",
+    "main.js": "/deploy-mcq/static/js/main.cf3125cd.js",
+    "static/media/Indian Railways_All_1583407036.webp": "/deploy-mcq/static/media/Indian Railways_All_1583407036.2e27133998f74e20f963.webp",
+    "static/media/RPF RPSF_All_1594144564.webp": "/deploy-mcq/static/media/RPF RPSF_All_1594144564.afdcdd08fcdf29c488e9.webp",
+    "static/media/Railways_All_1594842136.webp": "/deploy-mcq/static/media/Railways_All_1594842136.51382317d850ce954013.webp",
     "index.html": "/deploy-mcq/index.html",
-    "main.8c88fca3.js.map": "/deploy-mcq/static/js/main.8c88fca3.js.map"
+    "main.31087a08.css.map": "/deploy-mcq/static/css/main.31087a08.css.map",
+    "main.cf3125cd.js.map": "/deploy-mcq/static/js/main.cf3125cd.js.map"
   },
   "entrypoints": [
-    "static/js/main.8c88fca3.js"
+    "static/css/main.31087a08.css",
+    "static/js/main.cf3125cd.js"
   ]
 }
